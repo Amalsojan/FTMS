@@ -27,6 +27,47 @@
                     <input type="text" id="lastName" name="LastName" placeholder="Your lastname">
                 </td>
             </tr>
+
+            
+            <tr>
+                <td>
+                    <label for="title">Title:</label>
+                </td>
+
+                <td>
+                    <select id="title" name="title" multiple >
+                        <option value="1" selected> Mr.</option>
+                        <option value="2">Mrs.</option>
+                        <option value="3" selected> Ms.</option>
+                    </select>
+                
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="Picture">Upload Picture:</label>
+                </td>
+                <td>
+                    <input type="file" id="picture'" name="picture" accept="image/*,*.pdf">
+                    <input type="file" id="idcard'" name="idcard" accept="image/*">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="title">Title:</label>
+                </td>
+
+                <td>
+                    <select id="city" name="city" multiple >
+                        <option value="Ekm" > Ekm</option>
+                        <option value=" Alp">Alp</option>
+                        <option value="Cok" > Cok</option>
+                    </select>
+                
+                </td>
+            </tr>
             <tr>
 
                 <td>
@@ -142,9 +183,34 @@
                     <input type="reset" id="" name="" value="reset" />
                 </td>
             </tr>
+
+            <tr>
+                <td>
+                    <label for="favcolor">Select your fav color:</label>
+                </td>
+                <td>
+                    <input type="color" id="favcolor" name="favcolor" value="#000000" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="rateme">Rate me:</label>
+                </td>
+                <td>
+                    <input type="range" min="0" max="10" value="0" class="slider" id="rateme"/>
+                </td>
+            </tr>
         </table>
         </form>
-       
+        <marquee>
+        <video width="320" height="240" controls autoplay muted loop>
+            <source src="https://player.vimeo.com/progressive_redirect/playback/704843127/rendition/540p?loc=external&oauth2_token_id=57447761&signature=3ea8745f5f220a09c67eede1a8b1442b7dd231989c6caf61405494a25f536839" type="video/mp4">
+            
+        </video>
+        </marquee>
+
+        
         <script>
             function saveData(){
                 var firstName=document.getElementById('firstName').value;
