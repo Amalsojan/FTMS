@@ -8,9 +8,154 @@
 
     <body bgcolor="green">
 
-        <h1><center>Currently DOWN</center></h1>
+        <h1><center>Booking Page</center></h1>
+        <form action="print.html" method="POST">
+        <table cellspacing="6" cellpadding="2">
+            <tr>
+                <td>
+                    <label for="firstname">First Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="firstName" name="FirstName" placeholder="Your firstname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lastname">LastName:</label>
+                </td>
+                <td>
+                    <input type="text" id="lastName" name="LastName" placeholder="Your lastname">
+                </td>
+            </tr>
+            <tr>
 
+                <td>
+                    <label for="address" >Address:</label>
+                </td>
+                <td>
+                <textarea id="address" name="address" rows="5" cols="25" placeholder="Your Address"></textarea>
+
+               
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="DateofBirth">Date of Birth:</label>
+                </td>
+
+                <td>
+                    <input type="date" id="" name="" placeholder="Your dob">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="Gender">Gender:</label>
+                </td>
+
+                <td>
+                    <input type="radio" id="Male" name="Gender" value="1" >Male
+                    <input type="radio" id="Female" name="Gender" value="2" >Female
+                    <input type="radio" id="Others" name="Gender" value="3">Others
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="mobile number">Mobile number:</label>
+                </td>
+                <td>
+                    <input type="text" id="mobile number" name="mobile number" placeholder="Your Mobile number">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="Email">Email:</label>
+                </td>
+                <td>
+                    <input type="text" id="Email" name="Email" placeholder="Your Email id">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="User name">User name:</label>
+                </td>
+                <td>
+                    <input type="text" id="user name" name="user name" placeholder="Your user name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="Password">Password:</label>
+                </td>
+                <td>
+                    <input type="password" id="pass" name="pass" placeholder="Your password" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="Can we contact You">Can we contact you?</label>
+                </td>
+
+                <td>
+                    <input type="radio" id="Yes" name="Select" value="1" />Yes
+                    <input type="radio" id="No" name="Select" value="2" />No
+                
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <label for="Communication Preference">Communication Preference:</label>
+                </td>
+
+                <td>
+                    <input type="checkbox" id="Email" name="Select" value="1" />Email
+                    <input type="checkbox" id="SMS" name="Select" value="2" />SMS
+                
+                </td>
+            </tr>
+
+            <tr>
+                
+
+                <td>
+                    <input type="checkbox" id="Agreement" name="Agreement" value="1" />I agree to the <a href="terms and cond.html"> terms and conditions</a> of the website
+                    
+                
+                </td>
+
+                
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit" onclick="saveData();" id="" name="" />
+                </td>
+                <td>
+                    <input type="reset" id="" name="" value="reset" />
+                </td>
+            </tr>
+        </table>
+        </form>
        
+        <script>
+            function saveData(){
+                var firstName=document.getElementById('firstName').value;
+                var lastName=document.getElementById('lastName').value;
+                var address=document.getElementById('address').value;
+
+                localStorage.setItem('firstName',firstName);
+                localStorage.setItem('lastName',lastName);
+                localStorage.setItem('address',address);
+            }
+        </script>
 
     </body>
 
