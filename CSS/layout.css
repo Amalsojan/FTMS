@@ -1,0 +1,82 @@
+.left-div
+{   
+    position: absolute;
+    top: 10px;
+    left: 5px;
+
+    border: 1px solid black;
+    width: 40%;
+    float: left;
+    background-color: blue;
+    color:white;
+    z-index: 2;
+    display: block;
+}
+
+.left-div:hover
+{
+    background-color: bisque;
+    color: rebeccapurple;
+    cursor: pointer;
+}
+
+.right-div
+{
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    border: 1px solid red;
+    width: 40%;
+    float: left;
+    background-color:lightgreen;
+    z-index: 3;
+}
+
+
+a:link{
+    color: orange;
+}
+
+a:visited
+{
+    color: brown;
+}
+
+a:hover{
+    color: blueviolet;
+    text-decoration: overline;
+}
+
+.container
+{
+    border: 10px solid green;
+    position: absolute;
+    top: 50px;
+    width: 50%;
+    left: 30px;
+    height: 100px;
+}
+
+.float{
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: aqua;
+    font-weight: bold;
+    font: size 23px; 
+    line-height: 100px;
+    text-align: center;
+}
+
+li:first-child{
+    font-weight: bold;
+}
+
+input:focus{
+    border:1px solid brown;
+    background-color: beige;
+}
+
