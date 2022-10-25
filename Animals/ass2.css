@@ -1,0 +1,78 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    
+}
+.login-section{
+    background-color: skyblue;
+    margin-top: 100px;
+    margin-left: 410px;
+    margin-right:500px;
+    padding-left: 50px;
+    padding-right: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 400px;
+    height: 290px;
+    border-radius: 20px;
+    
+}
+
+.mid-container{
+    display: flex;
+    margin-left: 20px;
+
+}
+#right{
+    margin-left: 80px;
+}
+#email{
+    margin-top: 46px;
+    width: 350px;
+    height: 35px;
+
+}
+#password{
+    width: 350px;
+    height:35px;
+}
+#signin{
+    width: 350px;
+    height: 33px;
+    background-color:red;
+    border: 0px;
+    color: white;
+    font-weight: bold;
+   
+}
+#member{
+    padding-left: 80px;
+}
+
+.nav {
+    background-color: skyblue;
+    overflow: hidden;
+  }
+  
+
+.nav a {
+    /* float: left; */
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+  }
+  
+
+.nav a:hover {
+    background-color: black;
+    color: red;
+  }
+  
+  
+.nav a.active {
+    background-color: gray;
+    color: black;
+  }
